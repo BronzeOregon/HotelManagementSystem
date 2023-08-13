@@ -1,0 +1,3 @@
+C:/Users/dcopp/CLionProjects/ManagerSystem/cmake-build-debug/CMakeFiles/ManagerSystem.dir
+C:/Users/dcopp/CLionProjects/ManagerSystem/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/dcopp/CLionProjects/ManagerSystem/cmake-build-debug/CMakeFiles/rebuild_cache.dir

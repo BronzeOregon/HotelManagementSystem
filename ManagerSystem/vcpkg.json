@@ -1,0 +1,12 @@
+{
+  "name" : "managersystem",
+  "version-string" : "1.0.0",
+  "builtin-baseline" : "0fa8459cf3a7caca7adc58f992bc32ff13630684",
+  "dependencies" : [ {
+    "name" : "boost-core",
+    "version>=" : "1.82.0#2"
+  }, {
+    "name" : "imgui",
+    "version>=" : "1.89.7"
+  } ]
+}
