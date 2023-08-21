@@ -97,6 +97,15 @@ public:void setRoomNum(int input){
         this->booked=b;
 
     }
+
+    void checkOut(){
+        this->guest.setName("");
+        this->guest.setCheckOutDate("");
+        this->guest.setCheckInDate("");
+        this->guest.setPhone("");
+
+        this->booked = false;
+    }
 };
 
 void availableRooms(Room rooms[]){
@@ -174,6 +183,28 @@ void mainMenu(Room rooms[]){
 
         }
 
+        if (input == '3'){
+            cout << "Please enter the room number you are checking out.\n";
+            int room;
+            cin >> room;
+            int roomArr;
+
+            for (int i = 0; i < 60; i++) {
+                if (rooms[i].getRoomNum() == room) {
+                    roomArr = i;
+                }
+            }
+
+            cout << "You are checking out room " + to_string(rooms[roomArr].getRoomNum()) + ". Is that correct?(y/n)\n";
+            char input;
+            cin >> input;
+            if(input=='y') {
+                rooms[roomArr].checkOut();
+                cout << "Guest has been successfully checked out! Wish them well!\n";
+            } else{
+                cout << "Please try again. Thank you!\n";
+            }
+        }
 
         if (input == 0) {
             cont = false;
